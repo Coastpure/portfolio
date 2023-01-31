@@ -1,0 +1,19 @@
+npm install alpinejs
+
+on app.js file, add: 
+
+import Alpine from 'alpinejs'
+ 
+window.Alpine = Alpine
+ 
+Alpine.start()
+
+then on terminal, run: 
+
+npm run dev
+
+inside welcome.blade, at the bottom above </body>, add: 
+
+<script src="{{ asset('js/app.js') }}" defer></script>
+
+20:00
