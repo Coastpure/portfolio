@@ -21,3 +21,16 @@ used
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js">
 
   instead of npm install 
+
+
+install tailwind 
+
+go to https://tailgrids.com/pricing and download free version 
+
+open tailwind.config.js copy plugins and paste inn our projet's tailwind.config.jd 
+
+require("tailgrids/plugin")
+
+copy and paste plugin.js file to our project directory
+
+28:00
