@@ -16,4 +16,8 @@ inside welcome.blade, at the bottom above </body>, add:
 
 <script src="{{ asset('js/app.js') }}" defer></script>
 
-20:00
+used 
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js">
+
+  instead of npm install 
