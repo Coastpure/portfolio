@@ -33,4 +33,13 @@ require("tailgrids/plugin")
 
 copy and paste plugin.js file to our project directory
 
-28:00
+paste font line in app.css
+
+npm run dev to start
+
+in .editorconfig, change indent_size = 2 and add 
+[*.php]
+indent_size = 4
+
+make new component
+ php artisan make:component AppLayout
