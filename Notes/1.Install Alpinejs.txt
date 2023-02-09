@@ -43,3 +43,9 @@ indent_size = 4
 
 make new component
  php artisan make:component AppLayout
+
+ to make new components 
+  php artisan make:component Layout
+
+  it will make two files, navbar.blade.php and 
+  Navbar.php in app/view/Components/Layout  which is a class

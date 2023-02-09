@@ -1,0 +1,21 @@
+after making the component 
+go to navbar.php 
+define a new array
+
+class Navbar extends Component
+{
+
+    public array $navigationItems = [];
+
+inside public function add 
+
+public function __construct()
+    {
+        $this->navigationItems = [
+            ['label' => 'About', 'href' => '#about'],
+            ['label' => 'Projects', 'href' => '#portfolio'],
+            ['label' => 'Coding Tutorials', 'href' => '#tutorials'],
+            ['label' => 'Contact', 'href' => '#contact'], 
+        ];
+
+inside navbar.blade, we start writing html
