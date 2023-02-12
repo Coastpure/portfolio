@@ -20,4 +20,19 @@ public function __construct()
 
 inside navbar.blade, we start writing html and it's code 
 
-44:00
+
+
+for dark mode, in app.blade add class dark at the top i.e 
+
+html class="dark"
+
+then in tailwind.config add 
+  darkMode: 'class',
+
+because if you don't, the dark mode will use system or browser settings
+
+php artisan view:clear
+
+to clear cache for view files
+
+48:00

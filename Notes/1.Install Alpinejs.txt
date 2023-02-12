@@ -25,7 +25,7 @@ used
 
 install tailwind 
 
-go to https://tailgrids.com/pricing and download free version 
+go to https://tailgrids.com and download free version 
 
 open tailwind.config.js copy plugins and paste inn our projet's tailwind.config.jd 
 
