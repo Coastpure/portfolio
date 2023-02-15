@@ -35,4 +35,4 @@ php artisan view:clear
 
 to clear cache for view files
 
-48:00
+1:01:00

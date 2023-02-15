@@ -2,7 +2,7 @@
 <header
     {{-- indicates whether navbar is open on mobile screen or not--}}
     x-data="{navbarOpen: false}" 
-    class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24"
+    class="fixed left-0 top-0 z-50 bg-white w-full flex items-center shadow-md dark:bg-slate-900 h-24 "
 >
 
     <div class="container">
@@ -29,12 +29,13 @@
                     {{-- whenever this is clicked, we're gonna inverse the navbarOPen variable, if it's closed we're gonna open and vice versa --}}
                     {{-- If it's open we're gonna add class navbarTogglerActive --}}
                     <x-layout.navbar-hamburger @click="navbarOpen = !navbarOpen"
-                    x-bind:class="navbarOpen && 'navbarTogglerActive'">
+                            x-bind:class="navbarOpen && 'navbarTogglerActive'">
                     </x-layout.navbar-hamburger>
 
                     <nav
                     {{-- nav will have a class of hidden if it is not open --}}
-                    :class="!navbarOPen && 'hidden'"
+                                        {{-- had an error here because of  'hidden'"--}}
+                    :class="!navbarOpen && 'hidden' "
                     id="navbarCollapse"
                     class="absolute right-0 top-full bg-white py-5 px-6 z-50 shadow rounded-lg w-full dark:bg-slate-900 dark:text-gray-300 lg:px-0 lg:max-w-full lg:w-full lg:right-4 lg:block lg:static lg:shadow-none"
                     >
@@ -46,6 +47,11 @@
                                 {{ $item['label']}}
                             </x-layout.navbar-item>
                         @endforeach
+                        {{-- youtube icon --}}
+                        <div class="m-0 lg:ml-10 xl:ml-16 relative top-1 ">
+                            <div class="g-ytsubscribe" data-channelid="UCR5t_qZFMMDs_w3nugFe5eg" data-layout="default"
+                                 data-count="default"></div>
+                          </div>
                     </ul>
 
                     </nav>
