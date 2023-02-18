@@ -11,9 +11,9 @@
         {{-- for yt icon to work --}}
         <script src="https://apis.google.com/js/platform.js"></script>
     </head>
-    <body class="text-gray-800 dark:text-gray-200 dark:bg-[#242933]">
+    <body class="text-gray-800 dark:text-gray-200">
     {{-- bg-[#242933] --}}
-    <div class="min-h-screen bg-gray-100 dark:bg-gray-900 pt-24">>
+    <div class="min-h-screen bg-gray-100 dark:bg-gray-900 pt-24">
         <!-- ====== Navbar Section Start -->
         <x-layout.navbar></x-layout.navbar>
         <!-- ====== Navbar Section End -->
